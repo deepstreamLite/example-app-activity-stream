@@ -1,0 +1,147 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: #e9ebee;
+  height: 100%;
+}
+
+.header {
+  height: 50px;
+  background: #3b5998;
+  color: #fff;
+  padding: 15px 20px;
+  font-weight: 500;
+}
+
+.header .title {
+    float: left;
+}
+
+.header .connection-state {
+    float: right;
+}
+
+
+/* POST */
+
+.post {
+    background: #fff;
+    border: 1px solid #e5e6e9;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.post__image {
+  float: left;
+}
+
+.post__text {
+  float: left;
+  margin-left: 10px;
+  width: 380px;
+}
+.post__text textarea {
+  border: none;
+  border-top: 2px solid #e5e6e9;
+  border-bottom: 2px solid #e5e6e9;
+  outline: none;
+  width: 100%;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #5C5C5C;
+}
+
+.post__image img {
+  width: 60px;
+  height: auto;
+}
+
+.post__control {
+  clear: both;
+}
+
+.post__control button {
+  padding: 5px 15px;
+  background: #4267b2;
+  color: #fff;
+  border-color: #4267b2;
+  border-radius: 3px;
+  margin-left: 400px;
+  margin-top: 5px; 
+  cursor: pointer;
+  outline: none;
+}
+
+/* CARDS */
+.cards, .post {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px
+}
+
+.cards {
+    padding-top: 50px;
+}
+
+.card {
+  width: 100%;
+  padding: 13px;
+  background: #fff;
+  border: 1px solid #e5e6e9;
+}
+
+.new_card {
+  animation-name: newPost;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 1s;
+}
+
+
+.card__header{
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.card__image {
+  margin-right: 5px;
+}
+
+.card__image img {
+  width: 50px;
+  height: auto;
+}
+
+.card__name{
+  color: #365899;
+  margin: 3px 0 0 0;
+}
+
+.card__time {
+  color: #90949c
+}
+
+@keyframes newPost {
+  0% {
+    background: #fff;
+  }
+  50% {
+    background: #C3D0E9;
+    color: #fff;
+  }
+  100% {
+    background: #fff;
+    transform: skew(0)
+  }
+}
